@@ -25,6 +25,23 @@ using json = nlohmann::json;
 typedef ChakraProtoMsg::NodeType ChakraNodeType;
 typedef ChakraProtoMsg::CollectiveCommType ChakraCollectiveCommType;
 
+// 新增：用于保存一次拓扑重构的参数
+struct ReconfigurationParams {
+    // 目标拓扑类型名称（例如："Ring"、"FullyConnected"、"Switch"）
+    std::string target_topology_name;
+    // 重构延迟（单位：ns），用于通过事件系统建模重构耗时
+    uint64_t reconfiguration_delay_ns = 0;
+    // 是否在重构期间暂停通信（新通信不再发起）
+    bool pause_communication = false;
+    // 如果需要暂停，暂停持续时长（单位：ns），如需与重构延迟分离
+    uint64_t pause_duration_ns = 0;
+};
+
+// 前向声明：解析和处理重构
+static ReconfigurationParams parse_reconfiguration_params(
+    const std::shared_ptr<Chakra::ETFeederNode>& node);
+static void normalize_and_validate_reconfig_params(ReconfigurationParams& params);
+
 Workload::Workload(Sys* sys, string et_filename, string comm_group_filename) {
     string workload_filename = et_filename + "." + to_string(sys->id) + ".et";
     // Check if workload filename exists
@@ -256,7 +273,11 @@ void Workload::issue_comm(shared_ptr<Chakra::ETFeederNode> node) {
 
     if (!node->is_cpu_op() &&
         (node->type() == ChakraNodeType::COMM_COLL_NODE)) {
-        if (node->comm_type() == ChakraCollectiveCommType::ALL_REDUCE) {
+        // 兼容旧proto：以整数值比较（10表示RECONFIGURATION）
+        if (static_cast<int>(node->comm_type()) == 10) {
+            // 新增：处理拓扑重构
+            issue_reconfiguration(node);
+        } else if (node->comm_type() == ChakraCollectiveCommType::ALL_REDUCE) {
             DataSet* fp =
                 sys->generate_all_reduce(node->comm_size(), involved_dim,
                                          comm_group, node->comm_priority());
@@ -424,4 +445,78 @@ void Workload::report() {
     LoggerFactory::get_logger("workload")
         ->info("sys[{}] finished, {} cycles, exposed communication {} cycles.",
                sys->id, curr_tick, curr_tick - hw_resource->tics_gpu_ops);
+}
+
+// 新增：解析重构参数（从Chakra节点的attributes中读取）
+static ReconfigurationParams parse_reconfiguration_params(
+    const std::shared_ptr<Chakra::ETFeederNode>& node) {
+    ReconfigurationParams params;
+    // 读取目标拓扑名（必需）
+    if (node->has_other_attr("target_topology")) {
+        const auto& attr = node->get_other_attr("target_topology");
+        if (attr.has_string_val()) {
+            params.target_topology_name = attr.string_val();
+        }
+    }
+    // 读取重构延迟（可选，单位ns）
+    if (node->has_other_attr("reconfiguration_delay_ns")) {
+        const auto& attr = node->get_other_attr("reconfiguration_delay_ns");
+        if (attr.has_uint64_val()) {
+            params.reconfiguration_delay_ns = attr.uint64_val();
+        }
+    }
+    // 读取是否暂停通信（可选）
+    if (node->has_other_attr("pause_communication")) {
+        const auto& attr = node->get_other_attr("pause_communication");
+        if (attr.has_bool_val()) {
+            params.pause_communication = attr.bool_val();
+        }
+    }
+    // 读取暂停持续时间（可选，单位ns）
+    if (node->has_other_attr("pause_duration_ns")) {
+        const auto& attr = node->get_other_attr("pause_duration_ns");
+        if (attr.has_uint64_val()) {
+            params.pause_duration_ns = attr.uint64_val();
+        }
+    }
+    return params;
+}
+
+// 新增：校验并规范化重构参数
+static void normalize_and_validate_reconfig_params(ReconfigurationParams& params) {
+    // 默认拓扑名必须存在且合法
+    if (params.target_topology_name != "Ring" &&
+        params.target_topology_name != "FullyConnected" &&
+        params.target_topology_name != "Switch") {
+        std::cerr << "Invalid target_topology: " << params.target_topology_name << std::endl;
+        std::exit(EXIT_FAILURE);
+    }
+    // 非负校验
+    // 若用户未提供延迟，默认0ns
+    // 若用户未提供暂停时长，默认等于重构延迟（更贴近实际）
+    if (params.pause_communication && params.pause_duration_ns == 0) {
+        params.pause_duration_ns = params.reconfiguration_delay_ns;
+    }
+}
+
+// 新增：处理拓扑重构事件
+void Workload::issue_reconfiguration(std::shared_ptr<Chakra::ETFeederNode> node) {
+    // 占用硬件资源，保持与其他issue_*接口一致
+    hw_resource->occupy(node);
+
+    // 解析参数并规范化
+    ReconfigurationParams params = parse_reconfiguration_params(node);
+    normalize_and_validate_reconfig_params(params);
+
+    // 若需要，先暂停通信（仅阻止新通信发起，已在途的允许自然完成）
+    if (params.pause_communication) {
+        sys->pause_all_communications();
+    }
+
+    // 将重构请求下发到系统层，由系统层与网络前端配合完成拓扑替换
+    sys->request_network_reconfiguration(params.target_topology_name,
+                                         params.reconfiguration_delay_ns,
+                                         params.pause_communication,
+                                         params.pause_duration_ns,
+                                         node->id());
 }

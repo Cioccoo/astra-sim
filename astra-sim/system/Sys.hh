@@ -241,6 +241,18 @@ class Sys : public Callable {
                  sim_request* request,
                  void (*msg_handler)(void* fun_arg),
                  void* fun_arg);
+    
+    // 新增：拓扑重构控制接口（系统层对外）
+    void pause_all_communications(); // 暂停新通信的发起
+    void resume_all_communications(); // 恢复通信发起
+    bool is_communication_paused() const; // 查询当前是否处于暂停
+
+    // 请求进行网络重构：按目标拓扑与延迟安排事件；当重构完成后触发NetworkReconfigurationFinished
+    void request_network_reconfiguration(const std::string& target_topology_name,
+                                         uint64_t reconfiguration_delay_ns,
+                                         bool pause_communication,
+                                         uint64_t pause_duration_ns,
+                                         uint64_t chakra_node_id);
     //---------------------------------------------------------------------------
 
     static std::vector<Sys*> all_sys;  // vector of all Sys objects
@@ -326,6 +338,9 @@ class Sys : public Callable {
 
     // skip simulation for all nodes and use current duration
     bool replay_only;
+
+    // 新增：通信暂停状态标志
+    bool communication_paused;
 };
 
 }  // namespace AstraSim

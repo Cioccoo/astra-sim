@@ -1,0 +1,33 @@
+{
+    "version": "v1",
+    "attr": []
+  }
+  {
+    "id": 1,
+    "name": "reconfig_to_ring",
+    "type": 7,
+    "ctrl_deps": [],
+    "data_deps": [],
+    "start_time_micros": 0,
+    "duration_micros": 0,
+    "attr": [
+      {"name": "comm_type", "uint32_val": 10},
+      {"name": "target_topology", "string_val": "Ring"},
+      {"name": "reconfiguration_delay_ns", "uint64_val": 1000000},
+      {"name": "pause_communication", "bool_val": true},
+      {"name": "pause_duration_ns", "uint64_val": 1000000}
+    ]
+  }
+  {
+    "id": 2,
+    "name": "all_reduce_after",
+    "type": 7,
+    "ctrl_deps": [1],
+    "data_deps": [],
+    "start_time_micros": 0,
+    "duration_micros": 0,
+    "attr": [
+      {"name": "comm_type", "uint32_val": 0},
+      {"name": "comm_size", "uint64_val": 1048576}
+    ]
+  }

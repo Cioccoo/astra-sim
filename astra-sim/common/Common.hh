@@ -46,7 +46,8 @@ enum class ComType {
     All_Gather,
     All_Reduce,
     All_to_All,
-    All_Reduce_All_to_All
+    All_Reduce_All_to_All,
+    Reconfiguration = 10  // 新增：拓扑重构类型
 };
 
 enum class CollectiveOptimization { Baseline = 0, LocalBWAware };

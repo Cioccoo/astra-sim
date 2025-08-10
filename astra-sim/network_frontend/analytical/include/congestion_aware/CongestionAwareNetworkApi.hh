@@ -43,6 +43,7 @@ class CongestionAwareNetworkApi final : public CommonNetworkApi {
                  void (*msg_handler)(void* fun_arg),
                  void* fun_arg) override;
 
+
   private:
     /// topology
     static std::shared_ptr<Topology> topology;

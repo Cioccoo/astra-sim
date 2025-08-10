@@ -1,0 +1,9413 @@
+{
+  "version": "0.0.4"
+}{
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "durationMicros": "4832",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "1",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "0"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "2",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "1"
+  ],
+  "durationMicros": "10090",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "3",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "2"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "4",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "3"
+  ],
+  "durationMicros": "3398",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "5",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "4"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "6",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "5"
+  ],
+  "durationMicros": "6903",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "7",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "6"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "8",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "7"
+  ],
+  "durationMicros": "11471",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "9",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "8"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "10",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "9"
+  ],
+  "durationMicros": "11364",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "11",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "10"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "12",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "11"
+  ],
+  "durationMicros": "3398",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "13",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "12"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "14",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "13"
+  ],
+  "durationMicros": "6903",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "15",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "14"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "16",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "15"
+  ],
+  "durationMicros": "11364",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "17",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "16"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "18",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "17"
+  ],
+  "durationMicros": "3398",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "19",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "18"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "20",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "19"
+  ],
+  "durationMicros": "6903",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "21",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "20"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "22",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "21"
+  ],
+  "durationMicros": "12533",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "23",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "22"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "24",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "23"
+  ],
+  "durationMicros": "5045",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "25",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "24"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "26",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "25"
+  ],
+  "durationMicros": "3452",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "27",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "26"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "28",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "27"
+  ],
+  "durationMicros": "5736",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "29",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "28"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "30",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "29"
+  ],
+  "durationMicros": "5682",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "31",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "30"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "32",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "31"
+  ],
+  "durationMicros": "1700",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "33",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "32"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "34",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "33"
+  ],
+  "durationMicros": "3452",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "35",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "34"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "36",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "35"
+  ],
+  "durationMicros": "5682",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "37",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "36"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "38",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "37"
+  ],
+  "durationMicros": "1700",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "39",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "38"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "40",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "39"
+  ],
+  "durationMicros": "3452",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "41",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "40"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "42",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "41"
+  ],
+  "durationMicros": "5682",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "43",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "42"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "44",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "43"
+  ],
+  "durationMicros": "1700",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "45",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "44"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "46",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "45"
+  ],
+  "durationMicros": "3452",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "47",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "46"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "48",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "47"
+  ],
+  "durationMicros": "6267",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "49",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "48"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "50",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "49"
+  ],
+  "durationMicros": "2525",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "51",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "50"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "52",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "51"
+  ],
+  "durationMicros": "1727",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "53",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "52"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "54",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "53"
+  ],
+  "durationMicros": "2870",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "55",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "54"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "56",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "55"
+  ],
+  "durationMicros": "2842",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "57",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "56"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "58",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "57"
+  ],
+  "durationMicros": "852",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "59",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "58"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "60",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "59"
+  ],
+  "durationMicros": "1727",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "61",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "60"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "62",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "61"
+  ],
+  "durationMicros": "2842",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "63",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "62"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "64",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "63"
+  ],
+  "durationMicros": "852",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "65",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "64"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "66",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "65"
+  ],
+  "durationMicros": "1727",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "67",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "66"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "68",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "67"
+  ],
+  "durationMicros": "2842",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "69",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "68"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "70",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "69"
+  ],
+  "durationMicros": "852",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "71",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "70"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "72",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "71"
+  ],
+  "durationMicros": "1727",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "73",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "72"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "74",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "73"
+  ],
+  "durationMicros": "2842",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "75",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "74"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "76",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "75"
+  ],
+  "durationMicros": "852",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "77",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "76"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "78",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "77"
+  ],
+  "durationMicros": "1727",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "79",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "78"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "80",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "79"
+  ],
+  "durationMicros": "2842",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "81",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "80"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "82",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "81"
+  ],
+  "durationMicros": "852",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "83",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "82"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "84",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "83"
+  ],
+  "durationMicros": "1727",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "85",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "84"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "86",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "85"
+  ],
+  "durationMicros": "3135",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "87",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "86"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "88",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "87"
+  ],
+  "durationMicros": "1271",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "89",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "88"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "90",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "89"
+  ],
+  "durationMicros": "867",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "91",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "90"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "92",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "91"
+  ],
+  "durationMicros": "1443",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "93",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "92"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "94",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "93"
+  ],
+  "durationMicros": "1425",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "95",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "94"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "96",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "95"
+  ],
+  "durationMicros": "434",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "97",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "96"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "98",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "97"
+  ],
+  "durationMicros": "867",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "99",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "98"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "100",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "99"
+  ],
+  "durationMicros": "1425",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "101",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "100"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "102",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "101"
+  ],
+  "durationMicros": "434",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "103",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "102"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "104",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "103"
+  ],
+  "durationMicros": "867",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "105",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "104"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "106",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "105"
+  ],
+  "durationMicros": "3428",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "107",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "106"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "108",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "107"
+  ],
+  "durationMicros": "984",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "109",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "108"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "110",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "109"
+  ],
+  "durationMicros": "485",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "111",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "110"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "112",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "111"
+  ],
+  "durationMicros": "1462",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "113",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "112"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "114",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "113"
+  ],
+  "durationMicros": "984",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "115",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "114"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "116",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "115"
+  ],
+  "durationMicros": "485",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "117",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "116"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "118",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "117"
+  ],
+  "durationMicros": "1462",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "119",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "118"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "120",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "119"
+  ],
+  "durationMicros": "984",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "121",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "120"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "122",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "121"
+  ],
+  "durationMicros": "1322",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "123",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "122"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "124",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "123"
+  ],
+  "durationMicros": "1547",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "125",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "124"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "126",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "125"
+  ],
+  "durationMicros": "3270",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "127",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "126"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "128",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "127"
+  ],
+  "durationMicros": "1942",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "129",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "128"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "130",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "129"
+  ],
+  "durationMicros": "911",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "131",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "130"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "132",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "131"
+  ],
+  "durationMicros": "2898",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "133",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "132"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "134",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "133"
+  ],
+  "durationMicros": "1942",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "135",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "134"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "136",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "135"
+  ],
+  "durationMicros": "911",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "137",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "136"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "138",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "137"
+  ],
+  "durationMicros": "2898",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "139",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "138"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "140",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "139"
+  ],
+  "durationMicros": "1942",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "141",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "140"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "142",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "141"
+  ],
+  "durationMicros": "911",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "143",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "142"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "144",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "143"
+  ],
+  "durationMicros": "2898",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "145",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "144"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "146",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "145"
+  ],
+  "durationMicros": "1942",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "147",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "146"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "148",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "147"
+  ],
+  "durationMicros": "911",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "149",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "148"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "150",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "149"
+  ],
+  "durationMicros": "2898",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "151",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "150"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "152",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "151"
+  ],
+  "durationMicros": "1942",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "153",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "152"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "154",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "153"
+  ],
+  "durationMicros": "911",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "155",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "154"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "156",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "155"
+  ],
+  "durationMicros": "2898",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "157",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "156"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "158",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "157"
+  ],
+  "durationMicros": "1942",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "159",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "158"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "160",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "159"
+  ],
+  "durationMicros": "2584",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "161",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "160"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "162",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "161"
+  ],
+  "durationMicros": "3082",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "163",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "162"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "164",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "163"
+  ],
+  "durationMicros": "6486",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "165",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "164"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "166",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "165"
+  ],
+  "durationMicros": "3877",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "167",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "166"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "168",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "167"
+  ],
+  "durationMicros": "1807",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "169",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "168"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "170",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "169"
+  ],
+  "durationMicros": "5789",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "171",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "170"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "172",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "171"
+  ],
+  "durationMicros": "3877",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "173",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "172"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "174",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "173"
+  ],
+  "durationMicros": "1807",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "175",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "174"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "176",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "175"
+  ],
+  "durationMicros": "5789",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "177",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "176"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "178",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "177"
+  ],
+  "durationMicros": "3877",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "179",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "178"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "180",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "179"
+  ],
+  "durationMicros": "1807",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "181",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "180"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "182",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "181"
+  ],
+  "durationMicros": "5789",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "183",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "182"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "184",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "183"
+  ],
+  "durationMicros": "3877",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "185",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "184"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "186",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "185"
+  ],
+  "durationMicros": "5153",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "187",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "186"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "188",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "187"
+  ],
+  "durationMicros": "6160",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "189",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "188"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "190",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "189"
+  ],
+  "durationMicros": "12959",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "191",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "190"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "192",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "191"
+  ],
+  "durationMicros": "7753",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "193",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "192"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "194",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "193"
+  ],
+  "durationMicros": "3611",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "195",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "194"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "196",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "195"
+  ],
+  "durationMicros": "11577",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "197",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "196"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "198",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "197"
+  ],
+  "durationMicros": "7753",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "199",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "198"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "200",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "199"
+  ],
+  "durationMicros": "3611",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "201",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "200"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "202",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "201"
+  ],
+  "durationMicros": "11577",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "203",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "202"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "204",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "203"
+  ],
+  "durationMicros": "7753",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "205",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "204"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "206",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "205"
+  ],
+  "durationMicros": "3611",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "207",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "206"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "208",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "207"
+  ],
+  "durationMicros": "8178",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "209",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "208"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "210",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "209"
+  ],
+  "durationMicros": "16478",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "211",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "210"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "212",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "211"
+  ],
+  "durationMicros": "5523",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "213",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "212"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "214",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "213"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "215",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "214"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "216",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "215"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "217",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "216"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "218",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "217"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "219",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "218"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "65536"
+    }
+  ]
+}{
+  "id": "220",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "219"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "589824"
+    }
+  ]
+}{
+  "id": "221",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "220"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "262144"
+    }
+  ]
+}{
+  "id": "222",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "221"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "262144"
+    }
+  ]
+}{
+  "id": "223",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "222"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "224",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "223"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "225",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "224"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "226",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "225"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "227",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "226"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "228",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "227"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "229",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "228"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "230",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "229"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "231",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "230"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "262144"
+    }
+  ]
+}{
+  "id": "232",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "231"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "589824"
+    }
+  ]
+}{
+  "id": "233",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "232"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "262144"
+    }
+  ]
+}{
+  "id": "234",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "233"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "235",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "234"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "236",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "235"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "237",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "236"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "238",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "237"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "239",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "238"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "240",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "239"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "241",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "240"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "9437184"
+    }
+  ]
+}{
+  "id": "242",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "241"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "243",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "242"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "244",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "243"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "245",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "244"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "246",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "245"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "247",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "246"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "248",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "247"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "249",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "248"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "250",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "249"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "9437184"
+    }
+  ]
+}{
+  "id": "251",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "250"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "252",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "251"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "253",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "252"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "254",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "253"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "255",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "254"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "256",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "255"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "257",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "256"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "258",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "257"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "259",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "258"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "9437184"
+    }
+  ]
+}{
+  "id": "260",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "259"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "261",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "260"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "262",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "261"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "263",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "262"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "264",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "263"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "265",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "264"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "266",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "265"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "267",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "266"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8388608"
+    }
+  ]
+}{
+  "id": "268",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "267"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "37748736"
+    }
+  ]
+}{
+  "id": "269",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "268"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16777216"
+    }
+  ]
+}{
+  "id": "270",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "269"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "33554432"
+    }
+  ]
+}{
+  "id": "271",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "270"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "272",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "271"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "273",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "272"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "274",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "273"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "275",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "274"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "276",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "275"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "277",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "276"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "278",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "277"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "279",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "278"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16777216"
+    }
+  ]
+}{
+  "id": "280",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "279"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "37748736"
+    }
+  ]
+}{
+  "id": "281",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "280"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16777216"
+    }
+  ]
+}{
+  "id": "282",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "281"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "283",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "282"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "284",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "283"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "285",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "284"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "286",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "285"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "287",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "286"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "288",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "287"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16777216"
+    }
+  ]
+}{
+  "id": "289",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "288"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "37748736"
+    }
+  ]
+}{
+  "id": "290",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "289"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16777216"
+    }
+  ]
+}{
+  "id": "291",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "290"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "292",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "291"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "293",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "292"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "294",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "293"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "295",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "294"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "296",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "295"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "297",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "296"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "262144"
+    }
+  ]
+}{
+  "id": "298",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "297"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "589824"
+    }
+  ]
+}{
+  "id": "299",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "298"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "262144"
+    }
+  ]
+}{
+  "id": "300",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "299"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "301",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "300"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "302",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "301"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "303",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "302"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "304",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "303"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "305",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "304"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "306",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "305"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "524288"
+    }
+  ]
+}{
+  "id": "307",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "306"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2359296"
+    }
+  ]
+}{
+  "id": "308",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "307"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "309",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "308"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2097152"
+    }
+  ]
+}{
+  "id": "310",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "309"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "311",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "310"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "312",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "311"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "313",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "312"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "314",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "313"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "315",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "314"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "316",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "315"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "317",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "316"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "318",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "317"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "319",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "318"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2359296"
+    }
+  ]
+}{
+  "id": "320",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "319"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "321",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "320"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "322",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "321"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "323",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "322"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "324",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "323"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "325",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "324"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "326",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "325"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "327",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "326"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "328",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "327"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2359296"
+    }
+  ]
+}{
+  "id": "329",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "328"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "330",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "329"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "331",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "330"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "332",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "331"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "333",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "332"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "334",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "333"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "335",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "334"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "336",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "335"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "337",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "336"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2359296"
+    }
+  ]
+}{
+  "id": "338",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "337"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1048576"
+    }
+  ]
+}{
+  "id": "339",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "338"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "340",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "339"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "341",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "340"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "342",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "341"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "343",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "342"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "344",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "343"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "345",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "344"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2097152"
+    }
+  ]
+}{
+  "id": "346",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "345"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "9437184"
+    }
+  ]
+}{
+  "id": "347",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "346"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "348",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "347"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8388608"
+    }
+  ]
+}{
+  "id": "349",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "348"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "350",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "349"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "351",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "350"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "352",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "351"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "353",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "352"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "354",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "353"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "355",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "354"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "356",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "355"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "357",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "356"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "358",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "357"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "9437184"
+    }
+  ]
+}{
+  "id": "359",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "358"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "360",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "359"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "361",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "360"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "362",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "361"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "363",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "362"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "364",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "363"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "365",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "364"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "366",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "365"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "367",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "366"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "9437184"
+    }
+  ]
+}{
+  "id": "368",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "367"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4194304"
+    }
+  ]
+}{
+  "id": "369",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "368"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16000"
+    }
+  ]
+}{
+  "id": "370",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "369"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768000"
+    }
+  ]
+}{
+  "id": "371",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "370"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "372",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "371"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "373",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "372"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "150528"
+    }
+  ]
+}{
+  "id": "374",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "373"
+  ],
+  "durationMicros": "221",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "375",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "374"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16"
+    }
+  ]
+}{
+  "id": "376",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "375"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16"
+    }
+  ]
+}{
+  "id": "377",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "376"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}{
+  "id": "378",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "377"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "379",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "378"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "380",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "379"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "381",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "380"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "382",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "381"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "383",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "382"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "384",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "383"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "385",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "384"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "386",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "385"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "387",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "386"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "388",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "387"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "389",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "388"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "390",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "389"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "391",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "390"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "392",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "391"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "393",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "392"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "394",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "393"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "395",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "394"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "396",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "395"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "397",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "396"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "398",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "397"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "399",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "398"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "400",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "399"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "401",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "400"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "402",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "401"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "403",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "402"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "404",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "403"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "405",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "404"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "406",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "405"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "407",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "406"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "408",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "407"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "409",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "408"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "410",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "409"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "411",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "410"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "412",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "411"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "413",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "412"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "414",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "413"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "415",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "414"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "416",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "415"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "417",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "416"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "418",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "417"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "419",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "418"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "420",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "419"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "421",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "420"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "422",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "421"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "423",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "422"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "424",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "423"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "425",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "424"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "426",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "425"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "427",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "426"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "428",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "427"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "429",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "428"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "32768"
+    }
+  ]
+}{
+  "id": "430",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "429"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "431",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "430"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "432",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "431"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "433",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "432"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "434",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "433"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "435",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "434"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "436",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "435"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "437",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "436"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "438",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "437"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "439",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "438"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "440",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "439"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "441",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "440"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "442",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "441"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "443",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "442"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "444",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "443"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "445",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "444"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "446",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "445"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "447",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "446"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "448",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "447"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "449",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "448"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "450",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "449"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "451",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "450"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "452",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "451"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "453",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "452"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "454",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "453"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "455",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "454"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "456",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "455"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "457",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "456"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "458",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "457"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "459",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "458"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "2048"
+    }
+  ]
+}{
+  "id": "460",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "459"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "461",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "460"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "8192"
+    }
+  ]
+}{
+  "id": "462",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "461"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "463",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "462"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "464",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "463"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "465",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "464"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "466",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "465"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "467",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "466"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "468",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "467"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "469",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "468"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "470",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "469"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "471",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "470"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "472",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "471"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "473",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "472"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "474",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "473"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "475",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "474"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "476",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "475"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "477",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "476"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "478",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "477"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "479",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "478"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "4096"
+    }
+  ]
+}{
+  "id": "480",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "479"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "481",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "480"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "16384"
+    }
+  ]
+}{
+  "id": "482",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "481"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "483",
+  "name": "COMM_NODE",
+  "type": "COMM_COLL_NODE",
+  "dataDeps": [
+    "482"
+  ],
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    },
+    {
+      "name": "comm_type",
+      "int64Val": "0"
+    },
+    {
+      "name": "comm_size",
+      "int64Val": "1024"
+    }
+  ]
+}{
+  "id": "484",
+  "name": "COMP_NODE",
+  "type": "COMP_NODE",
+  "dataDeps": [
+    "483"
+  ],
+  "durationMicros": "1109",
+  "attr": [
+    {
+      "name": "is_cpu_op",
+      "boolVal": false
+    }
+  ]
+}

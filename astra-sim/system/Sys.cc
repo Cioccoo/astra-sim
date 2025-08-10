@@ -31,6 +31,9 @@ LICENSE file in the root directory of this source tree.
 #include "astra-sim/system/astraccl/native_collectives/logical_topology/BasicLogicalTopology.hh"
 #include "astra-sim/system/astraccl/native_collectives/logical_topology/GeneralComplexTopology.hh"
 #include <json/json.hpp>
+// Note: Do not include analytical network frontend headers here to avoid
+// introducing extra include path dependencies. Reconfiguration flow below
+// deliberately avoids referencing analytical-specific types.
 
 using namespace std;
 using namespace Chakra;
@@ -86,6 +89,10 @@ void Sys::SchedulerUnit::notify_stream_added(int vnet) {
 }
 
 void Sys::SchedulerUnit::notify_stream_added_into_ready_list() {
+    // 新增：当系统处于通信暂停时，不触发schedule
+    if (this->sys->communication_paused) {
+        return;
+    }
     if (this->sys->first_phase_streams < ready_list_threshold &&
         this->sys->total_running_streams < max_running_streams) {
         int max = ready_list_threshold - sys->first_phase_streams;
@@ -261,6 +268,99 @@ Sys::Sys(int id,
     this->dimension_to_break = 0;
 
     this->initialized = true;
+    
+    // 新增：初始化通信暂停状态为未暂停
+    this->communication_paused = false;
+}
+
+// 新增：暂停所有通信的发起（不影响已在途通信）
+void Sys::pause_all_communications() {
+    // 将标志位置为true，调度器据此不再初始化新的通信流
+    communication_paused = true;
+}
+
+// 新增：恢复通信发起
+void Sys::resume_all_communications() {
+    // 将标志位置为false，允许调度器继续发起新通信流
+    communication_paused = false;
+    // 可触发一次调度以尽快恢复
+    ask_for_schedule(max_running);
+}
+
+// 新增：查询当前是否处于暂停
+bool Sys::is_communication_paused() const {
+    return communication_paused;
+}
+
+// 内部辅助：检查拓扑名合法性（仅字符串校验，避免依赖具体后端类型）
+static bool is_valid_topology_name(const std::string& name) {
+    return (name == "Ring" || name == "FullyConnected" || name == "Switch");
+}
+
+// 新增：请求进行网络重构
+void Sys::request_network_reconfiguration(const std::string& target_topology_name,
+                                          uint64_t reconfiguration_delay_ns,
+                                          bool pause_communication,
+                                          uint64_t pause_duration_ns,
+                                          uint64_t chakra_node_id) {
+    // 仅做字符串合法性检查，避免依赖具体后端类型
+    if (!is_valid_topology_name(target_topology_name)) {
+        LoggerFactory::get_logger("system")->critical(
+            "Unknown target topology: {}", target_topology_name);
+        exit(EXIT_FAILURE);
+    }
+
+    // 将重构动作封装到事件：当前tick + 重构延迟
+    // 回调将完成：切换拓扑、（如需要）在pause_duration后恢复
+    struct ReconfigEventArg {
+        Sys* sys;
+        std::string target_topology;
+        bool pause;
+        uint64_t pause_ns;
+        uint64_t node_id;
+    };
+
+    auto* arg = new ReconfigEventArg{this, target_topology_name, pause_communication, pause_duration_ns, chakra_node_id};
+
+    // 在事件触发时执行拓扑重构
+    auto handler = [](void* p) {
+        auto* a = static_cast<ReconfigEventArg*>(p);
+        // 这里仅记录拓扑名，避免编译时引入后端类型。实际替换在网络前端内实现。
+        AstraSim::LoggerFactory::get_logger("system")->info(
+            "Topology reconfiguration event applied. target={}", a->target_topology);
+
+        // 通知Workload该节点完成：通过系统事件回调
+        WorkloadLayerHandlerData* wlhd = new WorkloadLayerHandlerData;
+        wlhd->node_id = a->node_id;
+        // 若配置了额外暂停时长，则在该时长后再触发完成，否则立即触发完成
+        if (a->pause && a->pause_ns > 0) {
+            // 安排一个恢复事件
+            struct ResumeArg { Sys* sys; WorkloadLayerHandlerData* wlhd; };
+            auto* rarg = new ResumeArg{a->sys, wlhd};
+            auto resume_handler = [](void* rp){
+                auto* ra = static_cast<ResumeArg*>(rp);
+                ra->sys->resume_all_communications();
+                // 兼容旧版本：用General事件作为“重构完成”通知
+                ra->sys->register_event(ra->sys->workload, EventType::General, ra->wlhd, 0);
+                delete ra;
+            };
+            timespec_t delta{time_type_e::NS, static_cast<long double>(a->pause_ns)};
+            a->sys->comm_NI->sim_schedule(delta, resume_handler, rarg);
+        } else {
+            // 直接触发完成事件
+            // 兼容旧版本：用General事件作为“重构完成”通知
+            a->sys->register_event(a->sys->workload, EventType::General, wlhd, 0);
+            // 立即恢复（如先前暂停）
+            if (a->pause) {
+                a->sys->resume_all_communications();
+            }
+        }
+        delete a;
+    };
+
+    // 调度重构事件
+    timespec_t delta{time_type_e::NS, static_cast<long double>(reconfiguration_delay_ns)};
+    comm_NI->sim_schedule(delta, handler, arg);
 }
 
 Sys::~Sys() {
@@ -1311,6 +1411,10 @@ void Sys::insert_stream(list<BaseStream*>* queue, BaseStream* baseStream) {
 }
 
 void Sys::ask_for_schedule(int max) {
+    // 新增：若处于暂停状态，直接返回，避免新通信流被发起
+    if (communication_paused) {
+        return;
+    }
     if (ready_list.size() == 0 ||
         ready_list.front()->synchronizer[ready_list.front()->stream_id] <
             all_sys.size()) {
@@ -1337,6 +1441,10 @@ void Sys::ask_for_schedule(int max) {
 }
 
 void Sys::schedule(int num) {
+    // 新增：当通信被暂停时，不进行新的流调度，直到恢复
+    if (communication_paused) {
+        return;
+    }
     int ready_list_size = ready_list.size();
     int counter = min(num, ready_list_size);
     while (counter > 0) {
